@@ -2,7 +2,7 @@ package memory
 
 import (
 	"errors"
-	"github.com/phachon/fasthttpsession"
+	"github.com/mikhailzhukov/fasthttpsession"
 	"reflect"
 	"time"
 )

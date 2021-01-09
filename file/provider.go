@@ -2,7 +2,7 @@ package file
 
 import (
 	"errors"
-	"github.com/phachon/fasthttpsession"
+	"github.com/mikhailzhukov/fasthttpsession"
 	"io/ioutil"
 	"os"
 	"path"

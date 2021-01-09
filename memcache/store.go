@@ -2,7 +2,7 @@ package memcache
 
 import (
 	"github.com/bradfitz/gomemcache/memcache"
-	"github.com/phachon/fasthttpsession"
+	"github.com/mikhailzhukov/fasthttpsession"
 	"github.com/valyala/fasthttp"
 )
 

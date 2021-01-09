@@ -3,8 +3,8 @@ package main
 // fasthttpsession memory provider example
 
 import (
-	"github.com/phachon/fasthttpsession"
-	"github.com/phachon/fasthttpsession/memory"
+	"github.com/mikhailzhukov/fasthttpsession"
+	"github.com/mikhailzhukov/fasthttpsession/memory"
 	"github.com/valyala/fasthttp"
 	"log"
 	"os"
@@ -30,7 +30,7 @@ var session = fasthttpsession.NewSession(fasthttpsession.NewDefaultConfig())
 //	DecodeFunc: func(cookieValue string) (string, error) {return "", nil},
 //})
 
-func main()  {
+func main() {
 
 	// You must set up provider before use
 	err := session.SetProvider("memory", &memory.Config{})
@@ -39,10 +39,10 @@ func main()  {
 		os.Exit(1)
 	}
 	addr := ":8086"
-	log.Println("fasthttpsession memory example server listen: "+addr)
+	log.Println("fasthttpsession memory example server listen: " + addr)
 	// Fasthttp start listen serve
 	err = fasthttp.ListenAndServe(addr, requestRouter)
 	if err != nil {
-		log.Println("listen server error :"+err.Error())
+		log.Println("listen server error :" + err.Error())
 	}
 }

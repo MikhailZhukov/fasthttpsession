@@ -1,7 +1,7 @@
 package mysql
 
 import (
-	"github.com/phachon/fasthttpsession"
+	"github.com/mikhailzhukov/fasthttpsession"
 	"github.com/valyala/fasthttp"
 	"time"
 )

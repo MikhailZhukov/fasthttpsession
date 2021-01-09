@@ -50,8 +50,8 @@ $ go get ./...
 // fasthttpsession use memory provider
 
 import (
-	"github.com/phachon/fasthttpsession"
-	"github.com/phachon/fasthttpsession/memory"
+	"github.com/mikhailzhukov/fasthttpsession"
+	"github.com/mikhailzhukov/fasthttpsession/memory"
 	"github.com/valyala/fasthttp"
 	"log"
 	"os"
